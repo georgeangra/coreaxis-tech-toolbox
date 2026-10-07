@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Download — CoreAxis Tech Toolbox</title>
+<meta name="description" content="Baixe a versão oficial do CoreAxis Tech Toolbox e verifique o SHA-256.">
+<meta name="theme-color" content="#060B16">
+<meta property="og:title" content="Download — CoreAxis Tech Toolbox">
+<meta property="og:description" content="Baixe a versão oficial do CoreAxis Tech Toolbox e verifique o SHA-256.">
+<meta property="og:image" content="assets/img/icon-192.png">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icon-32.png" sizes="32x32">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/img/icon.svg" alt=""><span>CoreAxis <b>Tech Toolbox</b></span></a>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="menu" aria-label="Principal"><a href="index.html">Início</a><a href="recursos.html">Recursos</a><a href="download.html" aria-current="page">Download</a><a href="verificar.html">Verificar download</a><a href="changelog.html">Changelog</a><a href="privacidade.html">Privacidade</a><a href="contato.html">Contato</a></nav>
+</div></header>
+<main id="conteudo">
+
+<section><div class="wrap">
+  <h1>Download</h1>
+  <p class="sub">Distribuição oficial exclusiva pelo GitHub. Desconfie de cópias em outros sites.</p>
+  <div class="cartao" data-download><p>Carregando a versão mais recente…</p>
+    <a class="btn primario grande" href="https://github.com/georgeangra/coreaxis-tech-toolbox/releases/latest">⬇ Ir para a página de download no GitHub</a></div>
+
+  <h2 style="margin-top:44px">Requisitos</h2>
+  <ul>
+    <li>Windows 10 (1809 ou superior) ou Windows 11, 64 bits</li>
+    <li>Permissão de administrador (o programa solicita ao abrir)</li>
+    <li>~110 MB livres · nenhuma dependência adicional</li>
+  </ul>
+
+  <h2 style="margin-top:36px">Instalação</h2>
+  <ol class="passos">
+    <li>Crie uma pasta exclusiva, por exemplo <code>E:\CoreAxis</code> no pendrive ou <code>C:\CoreAxis</code>.</li>
+    <li>Coloque o arquivo baixado dentro dela e <a href="#autenticidade">verifique o SHA-256</a>.</li>
+    <li>Dê dois cliques e aceite o pedido de administrador.</li>
+    <li>Aceite o contrato de uso, crie o usuário administrador e <b>anote a chave de recuperação</b> fora do pendrive.</li>
+  </ol>
+  <div class="aviso"><b>"O Windows protegeu o computador"?</b> O executável ainda não tem assinatura digital Authenticode (planejada). Confirme o SHA-256 e clique em <i>Mais informações → Executar assim mesmo</i>.</div>
+
+  <h2 id="autenticidade" style="margin-top:44px">Como verificar a autenticidade do download</h2>
+  <p>O hash SHA-256 é a "impressão digital" do arquivo: qualquer alteração, por menor que seja, muda o hash completamente. Se o hash do seu arquivo for igual ao oficial, o arquivo é exatamente o publicado pela CoreAxis Tech.</p>
+  <div class="info">Mais fácil: use o <a href="verificar.html">verificador no navegador</a> — arraste o arquivo e pronto. O cálculo é feito no seu computador; o arquivo não é enviado.</div>
+  
+<h3>PowerShell (Windows)</h3>
+<pre>Get-FileHash .\CoreAxisTechToolbox-1.1.1-portable.exe -Algorithm SHA256</pre>
+<p>Compare o valor do campo <code>Hash</code> com o hash oficial. Maiúsculas e minúsculas não importam; <b>todos</b> os 64 caracteres devem ser iguais.</p>
+<h3>Prompt de Comando</h3>
+<pre>certutil -hashfile CoreAxisTechToolbox-1.1.1-portable.exe SHA256</pre>
+<h3>Linux, macOS ou Git Bash</h3>
+<p>Com o <code>SHA256.txt</code> da release na mesma pasta do arquivo:</p>
+<pre>sha256sum -c SHA256.txt</pre>
+  <p>Hashes oficiais: <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/blob/main/SHA256.txt">SHA256.txt</a> · anexos de cada <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/releases">release</a> · <a href="verificar.html">lista no site</a>.</p>
+  <div class="aviso"><b>O hash não confere?</b> Não execute. Apague o arquivo, baixe novamente pelo GitHub oficial e, se persistir, <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/security/advisories/new">relate em privado</a>.</div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div>© <span data-ano>2026</span> <b>CoreAxis Tech</b> · Desenvolvedor: <b>George</b><br>
+  Distribuição oficial exclusiva: <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/releases">GitHub Releases</a></div>
+  <div><a href="privacidade.html">Privacidade</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/blob/main/SECURITY.md">Segurança</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/blob/main/LICENSE">Licença</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox">GitHub</a></div>
+</div></footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

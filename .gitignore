@@ -1,0 +1,17 @@
+# Repositório público: nunca versionar executáveis (vão como anexos de release),
+# chaves, licenças, dados ou arquivos temporários.
+*.exe
+*.zip
+*.7z
+*.lic
+*.vault
+*.pfx
+*.p12
+*signing-key*.json
+SENHA*
+CoreAxisData/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

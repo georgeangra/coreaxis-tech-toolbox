@@ -1,0 +1,52 @@
+name: 🔒 Segurança — sugestão de melhoria (NÃO para vulnerabilidades)
+description: Sugestões de endurecimento e boas práticas. Vulnerabilidades devem ser relatadas em privado.
+title: "[Segurança] "
+labels: ["segurança", "triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⛔ Encontrou uma VULNERABILIDADE?
+
+        **Não preencha este formulário.** Issues são públicas e expor uma falha antes da correção coloca todos os usuários em risco.
+
+        👉 **[Relatar vulnerabilidade em privado](https://github.com/georgeangra/coreaxis-tech-toolbox/security/advisories/new)** — veja o [SECURITY.md](https://github.com/georgeangra/coreaxis-tech-toolbox/blob/main/SECURITY.md).
+
+        Este formulário é apenas para **sugestões gerais** de segurança que não exponham riscos (ex.: nova verificação no módulo Segurança, melhoria na política de senhas, documentação).
+
+  - type: checkboxes
+    id: nao-vulnerabilidade
+    attributes:
+      label: Confirmação
+      options:
+        - label: Confirmo que esta NÃO é uma vulnerabilidade explorável e que o texto não contém detalhes que facilitem um ataque.
+          required: true
+
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria
+      options:
+        - Proteção de dados / criptografia
+        - Contas, senhas e acesso
+        - Integridade do executável / scripts
+        - Atualizações / distribuição
+        - Módulo Segurança (Defender, firewall, serviços)
+        - Documentação de segurança
+        - Outra
+    validations:
+      required: true
+
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: Sugestão
+      description: Descreva a melhoria proposta e o benefício para os usuários.
+    validations:
+      required: true
+
+  - type: textarea
+    id: referencias
+    attributes:
+      label: Referências (opcional)
+      description: Normas, boas práticas ou artigos (OWASP, CIS, Microsoft, LGPD…).

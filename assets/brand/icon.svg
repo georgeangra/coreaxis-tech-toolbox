@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="CoreAxis Tech Toolbox">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123A63"/>
+      <stop offset="1" stop-color="#060B16"/>
+    </linearGradient>
+    <linearGradient id="ln" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5FD4E0"/>
+      <stop offset="1" stop-color="#0BAEC2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#0BAEC2" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#0BAEC2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)"/>
+  <rect x="4.75" y="4.75" width="118.5" height="118.5" rx="27.25" fill="none" stroke="#0BAEC2" stroke-opacity=".35" stroke-width="1.5"/>
+  <circle cx="76" cy="36" r="24" fill="url(#glow)"/>
+  <g stroke="url(#ln)" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M76 36 L42 62"/>
+    <path d="M76 36 L66 82"/>
+    <path d="M42 62 L66 82"/>
+    <path d="M66 82 L92 102"/>
+  </g>
+  <circle cx="76" cy="36" r="13" fill="#0BAEC2"/>
+  <circle cx="76" cy="36" r="5" fill="#E3F7FA"/>
+  <circle cx="42" cy="62" r="7.5" fill="#0BAEC2"/>
+  <circle cx="66" cy="82" r="7.5" fill="#0BAEC2"/>
+  <circle cx="92" cy="102" r="9" fill="#5FD4E0"/>
+</svg>

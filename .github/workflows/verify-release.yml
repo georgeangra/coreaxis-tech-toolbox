@@ -1,0 +1,61 @@
+name: Verificação das releases (SHA-256)
+
+# Baixa os arquivos das releases publicadas e confere se os hashes SHA-256
+# correspondem aos valores oficiais (SHA256.txt da release, SHA256.txt do
+# repositório e site/hashes.json). Roda a cada release, semanalmente e sob demanda.
+
+on:
+  release:
+    types: [published]
+  schedule:
+    - cron: "0 9 * * 1"   # segundas-feiras, 06:00 (Brasília)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Obter arquivos do repositório
+        uses: actions/checkout@v4
+
+      - name: Conferir as 5 releases mais recentes
+        shell: bash
+        run: |
+          set -euo pipefail
+          falhas=0
+          for tag in $(gh release list --repo "$GITHUB_REPOSITORY" --limit 5 --json tagName --jq '.[].tagName'); do
+            echo "::group::Release $tag"
+            dir="rel-$tag"; mkdir -p "$dir"
+            gh release download "$tag" --repo "$GITHUB_REPOSITORY" --dir "$dir" --pattern "*.exe" --pattern "*.zip" --pattern "SHA256.txt" || true
+            if [ ! -f "$dir/SHA256.txt" ]; then
+              echo "::error::$tag não publica SHA256.txt"; falhas=$((falhas+1)); echo "::endgroup::"; continue
+            fi
+            grep -E '^[0-9a-fA-F]{64}  ' "$dir/SHA256.txt" > "$dir/hashes.lst"
+            if (cd "$dir" && sha256sum -c hashes.lst); then
+              echo "✅ $tag: hashes conferem"
+            else
+              echo "::error::$tag: HASH DIVERGENTE — arquivo da release não corresponde ao SHA256.txt"; falhas=$((falhas+1))
+            fi
+            # o hash da release precisa constar no SHA256.txt do repositório ou em site/hashes.json
+            while read -r hash nome; do
+              if ! grep -qi "$hash" SHA256.txt site/hashes.json; then
+                echo "::warning::$tag: hash de $nome não aparece em SHA256.txt/site/hashes.json do repositório"
+              fi
+            done < "$dir/hashes.lst"
+            echo "::endgroup::"
+          done
+          [ "$falhas" -eq 0 ] || { echo "::error::$falhas release(s) com problema"; exit 1; }
+
+      - name: Conferir VERSION.txt com a release mais recente
+        shell: bash
+        run: |
+          set -euo pipefail
+          ultima=$(gh release view --repo "$GITHUB_REPOSITORY" --json tagName --jq .tagName | sed 's/^v//')
+          versao=$(tr -d '[:space:]' < VERSION.txt)
+          echo "Release mais recente: $ultima · VERSION.txt: $versao"
+          [ "$ultima" = "$versao" ] || echo "::warning::VERSION.txt ($versao) difere da release mais recente ($ultima)"

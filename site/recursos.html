@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Recursos — CoreAxis Tech Toolbox</title>
+<meta name="description" content="Todos os módulos e funcionalidades do CoreAxis Tech Toolbox.">
+<meta name="theme-color" content="#060B16">
+<meta property="og:title" content="Recursos — CoreAxis Tech Toolbox">
+<meta property="og:description" content="Todos os módulos e funcionalidades do CoreAxis Tech Toolbox.">
+<meta property="og:image" content="assets/img/icon-192.png">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icon-32.png" sizes="32x32">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/img/icon.svg" alt=""><span>CoreAxis <b>Tech Toolbox</b></span></a>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="menu" aria-label="Principal"><a href="index.html">Início</a><a href="recursos.html" aria-current="page">Recursos</a><a href="download.html">Download</a><a href="verificar.html">Verificar download</a><a href="changelog.html">Changelog</a><a href="privacidade.html">Privacidade</a><a href="contato.html">Contato</a></nav>
+</div></header>
+<main id="conteudo">
+
+<section><div class="wrap">
+  <h1>Recursos</h1>
+  <p class="sub">Oito módulos integrados, pensados para o fluxo real do atendimento técnico: diagnosticar, reparar, documentar e entregar.</p>
+  <div class="grade">
+    <article class="cartao"><div class="ic" aria-hidden="true">📊</div><h3>Dashboard</h3><p>Visão do equipamento em segundos.</p><ul><li>CPU, RAM e disco em tempo real</li><li>Antivírus, firewall e reinicialização pendente</li><li>Ações rápidas e chamados abertos</li></ul></article>
+    <article class="cartao"><div class="ic" aria-hidden="true">🧩</div><h3>Diagnóstico</h3><p>Hardware completo via WMI/CIM.</p><ul><li>Memória por módulo e slots livres</li><li>Discos com SMART, desgaste e temperatura</li><li>BIOS/UEFI, Secure Boot, TPM, bateria</li><li>Relatório em PDF</li></ul></article>
+    <article class="cartao"><div class="ic" aria-hidden="true">🌐</div><h3>Rede</h3><p>Do ping à descoberta de dispositivos.</p><ul><li>Ping, Traceroute, PathPing, NSLookup</li><li>Scanner de portas com perfis (CFTV, impressoras, AD…)</li><li>Descoberta automática com fabricante pelo MAC</li><li>Teste de DNS e de velocidade</li></ul></article>
+    <article class="cartao"><div class="ic" aria-hidden="true">🛠️</div><h3>Windows</h3><p>Reparo e manutenção com saída em tempo real.</p><ul><li>SFC, DISM e rotina completa</li><li>Limpeza com análise prévia</li><li>Windows Update e reparo de componentes</li><li>Drivers: problemas, backup e restauração</li><li>32 atalhos para ferramentas nativas</li></ul></article>
+    <article class="cartao"><div class="ic" aria-hidden="true">🛡️</div><h3>Segurança</h3><p>Postura de proteção do computador.</p><ul><li>Windows Defender e antivírus de terceiros</li><li>Firewall por perfil</li><li>25 serviços críticos</li><li>Processos com verificação de assinatura digital</li></ul></article>
+    <article class="cartao"><div class="ic" aria-hidden="true">⚙️</div><h3>Automação</h3><p>PowerShell com um clique.</p><ul><li>19 scripts prontos (spooler, ativação, SMART, eventos, NTP…)</li><li>Editor de scripts próprios</li><li>Confirmação para scripts sensíveis</li><li>Scripts publicados para auditoria</li></ul></article>
+    <article class="cartao"><div class="ic" aria-hidden="true">📋</div><h3>Inventário</h3><p>Levantamento completo do parque.</p><ul><li>Hardware, softwares e atualizações</li><li>Vínculo com cliente e equipamento</li><li>Relatórios PDF e planilhas Excel</li></ul></article>
+    <article class="cartao"><div class="ic" aria-hidden="true">🎧</div><h3>Atendimento</h3><p>Gestão do suporte de ponta a ponta.</p><ul><li>Clientes, equipamentos e manutenções</li><li>Chamados com prioridade e status</li><li>Ordem de Serviço em PDF com sua marca</li></ul></article></div>
+</div></section>
+<section class="alt"><div class="wrap">
+  <h2>Segurança e privacidade embutidas</h2>
+  <table>
+    <tr><th>Recurso</th><th>Como funciona</th></tr>
+    <tr><td>Cofre de dados</td><td>Banco SQLite inteiro criptografado com AES-256-GCM; chaves derivadas por scrypt; decifrado somente em memória.</td></tr>
+    <tr><td>Contas e perfis</td><td>Administrador e Técnico, senha temporária com troca obrigatória, chave de recuperação.</td></tr>
+    <tr><td>Bloqueios</td><td>Bloqueio progressivo contra tentativas de senha e bloqueio automático por inatividade.</td></tr>
+    <tr><td>Auditoria</td><td>Registro de logins, alterações e scripts executados (com hash), por usuário.</td></tr>
+    <tr><td>Integridade</td><td>Pacote do executável protegido; scripts conferidos por SHA-256 antes de executar.</td></tr>
+    <tr><td>Atualizações</td><td>Somente pacotes com assinatura digital Ed25519 oficial, por HTTPS, sem permitir voltar a versões antigas.</td></tr>
+    <tr><td>Relatórios</td><td>Chave de produto do Windows mascarada por padrão.</td></tr>
+  </table>
+</div></section>
+<section><div class="wrap">
+  <h2>Licença e uso</h2>
+  <ul>
+    <li><b>15 dias de teste</b> com todas as funções.</li>
+    <li>Licença por dispositivo: <b>pendrive</b> (use em qualquer PC) ou <b>computador</b>. Ativação offline.</li>
+    <li>Ao vencer: <b>modo consulta</b> — seus dados continuam acessíveis e exportáveis.</li>
+  </ul>
+  <a class="btn primario" href="download.html">⬇ Baixar</a> <a class="btn" href="contato.html">Licenças comerciais</a>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div>© <span data-ano>2026</span> <b>CoreAxis Tech</b> · Desenvolvedor: <b>George</b><br>
+  Distribuição oficial exclusiva: <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/releases">GitHub Releases</a></div>
+  <div><a href="privacidade.html">Privacidade</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/blob/main/SECURITY.md">Segurança</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/blob/main/LICENSE">Licença</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox">GitHub</a></div>
+</div></footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

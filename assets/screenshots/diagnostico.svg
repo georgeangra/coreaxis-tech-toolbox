@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="Captura de tela: Diagnóstico">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#060B16"/><stop offset="1" stop-color="#0B2545"/></linearGradient></defs>
+  <rect width="1280" height="800" fill="url(#g)"/>
+  <rect x="0" y="0" width="1280" height="44" fill="#0A1020"/>
+  <circle cx="26" cy="22" r="7" fill="#0BAEC2"/><text x="44" y="27" font-family="Segoe UI, sans-serif" font-size="14" fill="#8EA3BF">CoreAxis Tech Toolbox</text>
+  <rect x="0" y="44" width="250" height="756" fill="#0A1020"/>
+  <rect x="20" y="90" width="150" height="14" rx="7" fill="#1A2433"/><rect x="20" y="142" width="170" height="14" rx="7" fill="#1A2433"/><rect x="20" y="194" width="190" height="14" rx="7" fill="#1A2433"/><rect x="20" y="246" width="150" height="14" rx="7" fill="#1A2433"/><rect x="20" y="298" width="170" height="14" rx="7" fill="#1A2433"/><rect x="20" y="350" width="190" height="14" rx="7" fill="#1A2433"/><rect x="20" y="402" width="150" height="14" rx="7" fill="#1A2433"/><rect x="20" y="454" width="170" height="14" rx="7" fill="#1A2433"/>
+  <rect x="290" y="84" width="950" height="150" rx="16" fill="#0BAEC2" fill-opacity=".14" stroke="#0BAEC2" stroke-opacity=".4"/>
+  <rect x="290" y="264" width="300" height="200" rx="14" fill="#0D1527" stroke="#1B2943"/><rect x="610" y="264" width="300" height="200" rx="14" fill="#0D1527" stroke="#1B2943"/><rect x="930" y="264" width="300" height="200" rx="14" fill="#0D1527" stroke="#1B2943"/>
+  <rect x="290" y="494" width="950" height="250" rx="14" fill="#0D1527" stroke="#1B2943"/>
+  <text x="640" y="380" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="44" font-weight="600" fill="#E3E8EE" transform="translate(130 0)">Diagnóstico</text>
+  <text x="640" y="430" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="20" fill="#8EA3BF" transform="translate(130 0)">Processador · memória · discos SMART · BIOS, TPM e Secure Boot</text>
+  <text x="640" y="640" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#5FD4E0" transform="translate(130 0)">CAPTURA DE TELA — substitua por assets/screenshots/diagnostico.png</text>
+</svg>

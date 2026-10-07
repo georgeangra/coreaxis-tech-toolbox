@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Verificar download — CoreAxis Tech Toolbox</title>
+<meta name="description" content="Confira o SHA-256 do arquivo baixado diretamente no navegador, sem enviar o arquivo.">
+<meta name="theme-color" content="#060B16">
+<meta property="og:title" content="Verificar download — CoreAxis Tech Toolbox">
+<meta property="og:description" content="Confira o SHA-256 do arquivo baixado diretamente no navegador, sem enviar o arquivo.">
+<meta property="og:image" content="assets/img/icon-192.png">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icon-32.png" sizes="32x32">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/img/icon.svg" alt=""><span>CoreAxis <b>Tech Toolbox</b></span></a>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="menu" aria-label="Principal"><a href="index.html">Início</a><a href="recursos.html">Recursos</a><a href="download.html">Download</a><a href="verificar.html" aria-current="page">Verificar download</a><a href="changelog.html">Changelog</a><a href="privacidade.html">Privacidade</a><a href="contato.html">Contato</a></nav>
+</div></header>
+<main id="conteudo">
+
+<section><div class="wrap">
+  <h1>Verificação de integridade</h1>
+  <p class="sub">Arraste o arquivo baixado abaixo. O SHA-256 é calculado <b>no seu navegador</b> — o arquivo não é enviado para nenhum servidor.</p>
+  <div class="drop" data-drop tabindex="0" role="button" aria-label="Selecionar arquivo para verificar">
+    <input type="file" aria-hidden="true">
+    <div style="font-size:42px" aria-hidden="true">🔐</div>
+    <p style="margin:6px 0 0"><b>Arraste o arquivo aqui</b> ou clique para selecionar</p>
+    <p style="margin:4px 0 0;color:var(--muted);font-size:14px">.exe ou .zip baixado da release</p>
+  </div>
+  <div class="barra"><div></div></div>
+  <div class="resultado" data-resultado role="status" aria-live="polite"></div>
+
+  <h2 style="margin-top:44px">Já tem o hash? Compare aqui</h2>
+  <form data-comparar style="display:flex;gap:10px;flex-wrap:wrap">
+    <label for="hash-in" class="skip">Hash SHA-256</label>
+    <input id="hash-in" class="mono" placeholder="Cole o valor do Get-FileHash" style="flex:1;min-width:260px;padding:12px;border-radius:10px;border:1px solid var(--borda);background:#050a14;color:var(--texto)">
+    <button class="btn primario" type="submit">Comparar</button>
+  </form>
+
+  <h2 style="margin-top:44px">Hashes oficiais publicados</h2>
+  <div class="cartao" style="overflow-x:auto"><table><thead><tr><th>Versão</th><th>Arquivo</th><th>SHA-256</th></tr></thead>
+    <tbody data-lista-hashes><tr><td colspan="3">Carregando…</td></tr></tbody></table></div>
+
+  <h2 id="manual" style="margin-top:44px">Como verificar a autenticidade do download (manual)</h2>
+  
+<h3>PowerShell (Windows)</h3>
+<pre>Get-FileHash .\CoreAxisTechToolbox-1.1.1-portable.exe -Algorithm SHA256</pre>
+<p>Compare o valor do campo <code>Hash</code> com o hash oficial. Maiúsculas e minúsculas não importam; <b>todos</b> os 64 caracteres devem ser iguais.</p>
+<h3>Prompt de Comando</h3>
+<pre>certutil -hashfile CoreAxisTechToolbox-1.1.1-portable.exe SHA256</pre>
+<h3>Linux, macOS ou Git Bash</h3>
+<p>Com o <code>SHA256.txt</code> da release na mesma pasta do arquivo:</p>
+<pre>sha256sum -c SHA256.txt</pre>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div>© <span data-ano>2026</span> <b>CoreAxis Tech</b> · Desenvolvedor: <b>George</b><br>
+  Distribuição oficial exclusiva: <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/releases">GitHub Releases</a></div>
+  <div><a href="privacidade.html">Privacidade</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/blob/main/SECURITY.md">Segurança</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox/blob/main/LICENSE">Licença</a> · <a href="https://github.com/georgeangra/coreaxis-tech-toolbox">GitHub</a></div>
+</div></footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

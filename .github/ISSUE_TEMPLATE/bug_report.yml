@@ -1,0 +1,118 @@
+name: 🐞 Relatar um problema (Bug Report)
+description: Algo não funciona como deveria no CoreAxis Tech Toolbox.
+title: "[Bug] "
+labels: ["bug", "triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a melhorar o CoreAxis Tech Toolbox!
+
+        ⚠️ **Não publique dados sensíveis**: informações de clientes, senhas, chave de recuperação, códigos de licença, números de série ou IPs públicos. Revise capturas de tela antes de anexar.
+        🔒 **Vulnerabilidade de segurança?** Não use este formulário — use o [relato privado](https://github.com/georgeangra/coreaxis-tech-toolbox/security/advisories/new).
+
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do programa
+      description: "Em Configurações → Sobre (exemplo: 1.1.1)."
+      placeholder: "1.1.1"
+    validations:
+      required: true
+
+  - type: input
+    id: sha256
+    attributes:
+      label: SHA-256 do executável
+      description: "Resultado de `Get-FileHash .\\CoreAxisTechToolbox-<versão>-portable.exe`. Garante que é a cópia oficial."
+      placeholder: "C9E440F7EC0A8166..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows
+      options:
+        - Windows 11 24H2 / 25H2
+        - Windows 11 23H2 ou anterior
+        - Windows 10 22H2
+        - Windows 10 (outra versão)
+        - Outro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: execucao
+    attributes:
+      label: De onde o programa é executado?
+      options:
+        - Pendrive
+        - Pasta no computador
+        - HD/SSD externo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: modulo
+    attributes:
+      label: Módulo afetado
+      options:
+        - Dashboard
+        - Diagnóstico
+        - Rede
+        - Windows (reparo, limpeza, update, drivers)
+        - Segurança
+        - Automação (scripts)
+        - Inventário
+        - Atendimento (clientes, chamados, OS)
+        - Configurações / Usuários
+        - Licença / Ativação
+        - Login / Cofre de dados
+        - Atualização do programa
+        - Abertura do programa
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o problema e a mensagem de erro exata, se houver.
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Abrir o módulo ...
+        2. Clicar em ...
+        3. Ver o erro ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que deveria acontecer?
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Log de erros (opcional)
+      description: Conteúdo de `CoreAxisData\logs\erros-AAAA-MM-DD.log`, se existir. Remova dados sensíveis.
+      render: text
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Confirmações
+      options:
+        - label: Estou usando a versão mais recente, baixada do GitHub oficial.
+          required: true
+        - label: Revisei o texto e os anexos e não incluí dados de clientes, senhas ou códigos de licença.
+          required: true

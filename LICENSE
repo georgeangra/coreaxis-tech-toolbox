@@ -1,0 +1,51 @@
+LICENÇA DE USO DE SOFTWARE PROPRIETÁRIO — CoreAxis Tech Toolbox
+Copyright (c) 2026 CoreAxis Tech. Todos os direitos reservados.
+Desenvolvedor: George
+
+1. ESTE REPOSITÓRIO
+   Este repositório público contém a documentação, o site, os arquivos de verificação
+   de integridade, as releases (executáveis) e uma cópia dos scripts PowerShell do
+   CoreAxis Tech Toolbox (pasta "auditoria/").
+   O código-fonte do aplicativo NÃO é distribuído neste repositório.
+
+2. EXECUTÁVEL (releases)
+   O CoreAxis Tech Toolbox é licenciado, não vendido, nos termos da Lei nº 9.609/1998.
+   O uso é regido pelo CONTRATO DE LICENÇA DE USO exibido e aceito na primeira abertura
+   do programa, que prevalece sobre este resumo. Em resumo:
+   a) Uso gratuito por 15 (quinze) dias para avaliação. Após esse período, o uso das
+      ferramentas exige licença válida; os dados do usuário permanecem acessíveis em
+      modo consulta.
+   b) Cada licença é válida para um único dispositivo (pendrive ou computador).
+   c) É vedado copiar, ceder, sublicenciar, alugar, vender ou distribuir o programa ou
+      licenças fora do canal oficial; realizar engenharia reversa, descompilar ou
+      contornar mecanismos de licenciamento, proteção ou integridade, ressalvado o
+      art. 6º da Lei nº 9.609/1998.
+   d) O software é fornecido "no estado em que se encontra", sem garantias além das
+      previstas em lei; o usuário é responsável por obter autorização do proprietário
+      do equipamento e por realizar backups antes de procedimentos que alterem o sistema.
+
+3. SCRIPTS PARA AUDITORIA (pasta "auditoria/")
+   Os scripts PowerShell são publicados exclusivamente para fins de TRANSPARÊNCIA e
+   AUDITORIA DE SEGURANÇA: qualquer pessoa pode lê-los, analisá-los e calcular seus
+   hashes para conferir o que o programa executa. A publicação não concede licença
+   para redistribuição ou uso comercial dos scripts fora do CoreAxis Tech Toolbox.
+
+4. DOCUMENTAÇÃO E SITE
+   Textos, imagens, logotipos e a marca "CoreAxis Tech" são de titularidade da
+   CoreAxis Tech e não podem ser usados para identificar outros produtos ou para
+   sugerir afiliação sem autorização por escrito.
+
+5. MARCAS DE TERCEIROS
+   Windows, PowerShell e Microsoft Defender são marcas da Microsoft Corporation.
+   Este projeto não é afiliado, patrocinado ou endossado pela Microsoft.
+
+6. COMPONENTES DE TERCEIROS
+   O executável incorpora componentes de código aberto, utilizados conforme suas
+   respectivas licenças: Electron (MIT), Chromium (BSD-3-Clause e outras),
+   Node.js (MIT), sql.js / SQLite (MIT / domínio público), ExcelJS (MIT).
+   Os avisos de licença desses componentes acompanham o executável.
+
+7. LEGISLAÇÃO E FORO
+   Regido pelas leis da República Federativa do Brasil.
+
+Contato para licenciamento: https://georgeangra.github.io/coreaxis-tech-toolbox/contato.html

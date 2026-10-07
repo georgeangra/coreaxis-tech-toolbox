@@ -1,0 +1,27 @@
+{
+    "latest":  "1.1.1",
+    "repository":  "https://github.com/georgeangra/coreaxis-tech-toolbox",
+    "releases":  [
+                     {
+                         "version":  "1.1.1",
+                         "date":  "2026-10-07",
+                         "files":  [
+                                       {
+                                           "name":  "auditoria-scripts-1.1.1.zip",
+                                           "sha256":  "a8f59ed217df79c3e7375f0f06aec62c7ac3535df946ed37887e9441c8b46360",
+                                           "size":  35317
+                                       },
+                                       {
+                                           "name":  "CoreAxisTechToolbox-1.1.1-portable.exe",
+                                           "sha256":  "c9e440f7ec0a8166236663701a2822ab35e42014c6bf2fbc5a2c30085c7a103f",
+                                           "size":  105163437
+                                       },
+                                       {
+                                           "name":  "CoreAxisTechToolbox-1.1.1-portable.zip",
+                                           "sha256":  "4b4fa8d75eef42fb5bf0bf8b96a65012ad11fc6e69d97328201416d119c361a0",
+                                           "size":  105170553
+                                       }
+                                   ]
+                     }
+                 ]
+}

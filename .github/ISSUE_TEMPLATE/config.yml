@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Relatar vulnerabilidade (privado)
+    url: https://github.com/georgeangra/coreaxis-tech-toolbox/security/advisories/new
+    about: Vulnerabilidades devem ser relatadas em privado, nunca em issues públicas.
+  - name: 🔐 Verificar autenticidade de um download
+    url: https://georgeangra.github.io/coreaxis-tech-toolbox/verificar.html
+    about: Confira o SHA-256 do arquivo antes de executar.
+  - name: 💼 Licenças comerciais e contato
+    url: https://georgeangra.github.io/coreaxis-tech-toolbox/contato.html
+    about: Compra, renovação e transferência de licenças.

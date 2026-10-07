@@ -1,0 +1,67 @@
+name: 💡 Sugerir uma funcionalidade (Feature Request)
+description: Ideia de nova ferramenta, script ou melhoria.
+title: "[Sugestão] "
+labels: ["melhoria", "triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sugestões de técnicos que usam o programa no dia a dia definem as próximas versões. Obrigado!
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - Diagnóstico de hardware
+        - Rede
+        - Reparo / manutenção do Windows
+        - Segurança
+        - Automação (novo script PowerShell)
+        - Inventário / relatórios
+        - Atendimento (clientes, chamados, OS)
+        - Interface / usabilidade
+        - Licenciamento / distribuição
+        - Outra
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema do seu dia a dia isso resolve?
+      placeholder: "Ex.: Toda vez que atendo uma impressora em rede preciso..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Como você imagina a solução?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Como você resolve isso hoje?
+      description: Ferramentas ou procedimentos que usa atualmente.
+
+  - type: dropdown
+    id: frequencia
+    attributes:
+      label: Com que frequência você precisaria disso?
+      options:
+        - Em quase todo atendimento
+        - Semanalmente
+        - Mensalmente
+        - Raramente
+    validations:
+      required: true
+
+  - type: textarea
+    id: script
+    attributes:
+      label: Script PowerShell de exemplo (opcional)
+      description: Se a sugestão for um script, cole aqui ou envie um pull request em `contribuicoes/scripts/`.
+      render: powershell
