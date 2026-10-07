@@ -57,4 +57,4 @@ Dúvidas sobre privacidade: [site oficial — contato](https://georgeangra.githu
 Relatos de segurança: [SECURITY.md](SECURITY.md)
 
 ---
-CoreAxis Tech · Desenvolvedor: George
+Desenvolvedor: CoreAxis Tech

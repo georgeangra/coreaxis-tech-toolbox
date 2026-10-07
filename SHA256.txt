@@ -1,12 +1,11 @@
 # CoreAxis Tech Toolbox — hashes SHA-256 oficiais
-# Versão: 1.1.1
-# Fonte oficial: https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/v1.1.1
+# Versão: 1.2.0
+# Fonte oficial: https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/v1.2.0
 #
 # Verificação no PowerShell:
-#   Get-FileHash .\CoreAxisTechToolbox-1.1.1-portable.exe -Algorithm SHA256
-# O valor exibido deve ser IDÊNTICO ao abaixo (maiúsculas/minúsculas não importam).
+#   Get-FileHash .\CoreAxisTechToolbox-1.2.0-portable.exe -Algorithm SHA256
 # Formato compatível com: sha256sum -c SHA256.txt
 
-a8f59ed217df79c3e7375f0f06aec62c7ac3535df946ed37887e9441c8b46360  auditoria-scripts-1.1.1.zip
-c9e440f7ec0a8166236663701a2822ab35e42014c6bf2fbc5a2c30085c7a103f  CoreAxisTechToolbox-1.1.1-portable.exe
-4b4fa8d75eef42fb5bf0bf8b96a65012ad11fc6e69d97328201416d119c361a0  CoreAxisTechToolbox-1.1.1-portable.zip
+3f42ba34cba66ef5a980553ec0508db881064dbe1f099b6e67c63f7d04bdbed3  auditoria-scripts-1.2.0.zip
+dcef9a0c00243aa65d8e7e319962ab296b6f9fa219e69f3f723e075267c9ede2  CoreAxisTechToolbox-1.2.0-portable.exe
+0f172989ed7b445cc08d9ce665c90987e58ef0b808e5919b311aaac1b963a156  CoreAxisTechToolbox-1.2.0-portable.zip

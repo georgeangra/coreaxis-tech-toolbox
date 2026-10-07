@@ -9,11 +9,16 @@ Os hashes SHA-256 de cada versão estão em [`SHA256.txt`](SHA256.txt) e na pág
 
 ## [Não lançado]
 
+## [1.2.0] - 2026-10-07
+
 ### Adicionado
 - Nova identidade visual e ícone do aplicativo baseados na marca CoreAxis Tech (constelação de nós em turquesa).
 - Publicação oficial pelo GitHub: releases com SHA-256, site com verificação de integridade no navegador e scripts PowerShell abertos para auditoria.
 - Atualizações automáticas servidas pelas releases do GitHub (manifesto assinado com Ed25519).
 - Preparação para assinatura digital Authenticode do executável no processo de build.
+
+### Segurança
+- O teste de 15 dias passa a ser **um por dispositivo**: baixar de novo, apagar a pasta `CoreAxisData`, trocar o programa de pasta ou atrasar o relógio não reinicia mais o teste. Sem licença, a data de início fica registrada num marcador autenticado no registro do usuário, em `%ProgramData%\CoreAxis` e na raiz do pendrive. Com licença válida nada é gravado fora da pasta do programa.
 
 ## [1.1.1] - 2026-10-07
 
@@ -52,7 +57,8 @@ Os hashes SHA-256 de cada versão estão em [`SHA256.txt`](SHA256.txt) e na pág
 - Relatórios PDF (inventário, Ordem de Serviço) e Excel.
 - Executável portátil único para Windows 10/11, dados em `CoreAxisData` ao lado do `.exe`.
 
-[Não lançado]: https://github.com/georgeangra/coreaxis-tech-toolbox/compare/v1.1.1...HEAD
+[Não lançado]: https://github.com/georgeangra/coreaxis-tech-toolbox/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/v1.2.0
 [1.1.1]: https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/v1.1.1
 [1.1.0]: https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/v1.1.0
 [1.0.0]: https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/v1.0.0

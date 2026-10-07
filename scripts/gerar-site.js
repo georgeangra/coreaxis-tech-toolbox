@@ -38,7 +38,7 @@ function page(file, title, desc, body) {
 ${body}
 </main>
 <footer><div class="wrap">
-  <div>© <span data-ano>2026</span> <b>CoreAxis Tech</b> · Desenvolvedor: <b>George</b><br>
+  <div>© <span data-ano>2026</span> <b>CoreAxis Tech</b><br>
   Distribuição oficial exclusiva: <a href="${REPO}/releases">GitHub Releases</a></div>
   <div><a href="privacidade.html">Privacidade</a> · <a href="${REPO}/blob/main/SECURITY.md">Segurança</a> · <a href="${REPO}/blob/main/LICENSE">Licença</a> · <a href="${REPO}">GitHub</a></div>
 </div></footer>
@@ -227,7 +227,7 @@ const out = {
 <section><div class="wrap">
   <h1>Changelog</h1>
   <p class="sub">Histórico de versões. Versão completa e atualizada em <a href="${REPO}/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</p>
-  <div class="versao"><h3>Próxima versão</h3><span class="data">em desenvolvimento</span>
+  <div class="versao"><h3>1.2.0</h3><span class="data">07/10/2026</span>
     <h4>Adicionado</h4><ul><li>Nova identidade visual e ícone baseados na marca CoreAxis Tech.</li><li>Publicação oficial pelo GitHub com SHA-256, verificação no navegador e scripts para auditoria.</li><li>Atualizações automáticas servidas pelas releases do GitHub, com assinatura Ed25519.</li><li>Preparação para assinatura digital Authenticode.</li></ul>
     <h4>Segurança</h4><ul><li>Teste de 15 dias passa a ser um por dispositivo: baixar de novo, trocar de pasta ou atrasar o relógio não reinicia o teste.</li></ul></div>
   <div class="versao"><h3>1.1.1</h3><span class="data">07/10/2026</span>
@@ -278,7 +278,7 @@ const out = {
   <h2 style="margin-top:44px">Desenvolvedor</h2>
   <div class="cartao" style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
     <img src="assets/img/icon.svg" alt="" width="64" height="64">
-    <div><b>CoreAxis Tech</b> — soluções em suporte técnico e automação de TI<br>Desenvolvedor: <b>George</b> · <a href="https://github.com/georgeangra">github.com/georgeangra</a></div>
+    <div><b>CoreAxis Tech</b> — soluções em suporte técnico e automação de TI<br><a href="https://github.com/georgeangra">github.com/georgeangra</a></div>
   </div>
 </div></section>`),
 

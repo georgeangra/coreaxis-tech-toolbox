@@ -222,6 +222,5 @@ O núcleo do aplicativo é proprietário. Os scripts PowerShell — a parte que 
 ## Desenvolvedor
 
 **CoreAxis Tech** — Soluções em suporte técnico e automação de TI
-Desenvolvedor: **George**
 
 <sub>© 2026 CoreAxis Tech. Todos os direitos reservados. Windows é marca registrada da Microsoft Corporation; este projeto não é afiliado à Microsoft.</sub>
