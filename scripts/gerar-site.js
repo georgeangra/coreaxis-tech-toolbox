@@ -108,7 +108,7 @@ const out = {
     <article class="cartao"><div class="ic">🚫</div><h3>Sem coleta de dados</h3><p>Sem telemetria, sem cadastro online. Clientes, chamados e inventários ficam só no seu dispositivo.</p></article>
     <article class="cartao"><div class="ic">🛡️</div><h3>Cofre criptografado</h3><p>AES-256-GCM, login por técnico, bloqueio automático e trilha de auditoria. Apoia a conformidade com a LGPD.</p></article>
     <article class="cartao"><div class="ic">📜</div><h3>Código auditável</h3><p>Os scripts PowerShell executados estão <a href="${REPO}/tree/main/auditoria">publicados</a> e são conferidos por hash antes de rodar.</p></article>
-    <article class="cartao"><div class="ic">💾</div><h3>Portátil de verdade</h3><p>Um único .exe. Não instala nada, não altera o sistema do cliente e não deixa rastros.</p></article>
+    <article class="cartao"><div class="ic">💾</div><h3>Portátil de verdade</h3><p>Um único .exe. Não instala nada e não altera o sistema do cliente. Com licença, não deixa rastros no PC atendido.</p></article>
     <article class="cartao"><div class="ic">🇧🇷</div><h3>Feito para o Brasil</h3><p>Interface em português, CPF/CNPJ, R$, laudo técnico, NTP.br e suporte em português.</p></article>
   </div>
 </div></section>
@@ -145,8 +145,8 @@ const out = {
 <section><div class="wrap">
   <h2>Licença e uso</h2>
   <ul>
-    <li><b>15 dias de teste</b> com todas as funções.</li>
-    <li>Licença por dispositivo: <b>pendrive</b> (use em qualquer PC) ou <b>computador</b>. Ativação offline.</li>
+    <li><b>15 dias de teste</b> com todas as funções — um teste por dispositivo (baixar de novo não reinicia).</li>
+    <li>Licença paga por dispositivo: <b>um pendrive</b> (use em qualquer PC) <b>ou um computador</b>. Ativação offline.</li>
     <li>Ao vencer: <b>modo consulta</b> — seus dados continuam acessíveis e exportáveis.</li>
   </ul>
   <a class="btn primario" href="download.html">⬇ Baixar</a> <a class="btn" href="contato.html">Licenças comerciais</a>
@@ -158,6 +158,18 @@ const out = {
   <p class="sub">Distribuição oficial exclusiva pelo GitHub. Desconfie de cópias em outros sites.</p>
   <div class="cartao" data-download><p>Carregando a versão mais recente…</p>
     <a class="btn primario grande" href="${REPO}/releases/latest">⬇ Ir para a página de download no GitHub</a></div>
+
+  <h2 id="licenca" style="margin-top:44px">Download gratuito, uso licenciado</h2>
+  <div class="aviso"><b>Baixar é grátis, mas o CoreAxis Tech Toolbox não é um programa gratuito.</b> O download inclui <b>15 dias de teste</b> com todas as funções. Depois disso, é preciso comprar uma licença para continuar usando as ferramentas.</div>
+  <table style="margin-top:16px">
+    <tr><th>Como funciona</th><th>Detalhes</th></tr>
+    <tr><td>Teste de 15 dias</td><td>Começa no primeiro uso, com todas as funções liberadas.</td></tr>
+    <tr><td><b>Um teste por dispositivo</b></td><td>Baixar de novo, apagar a pasta <code>CoreAxisData</code>, trocar o programa de pasta ou atrasar o relógio do Windows <b>não reinicia</b> o teste. A data de início fica registrada no computador e no pendrive onde o programa foi usado.</td></tr>
+    <tr><td><b>Uma licença = um dispositivo</b></td><td>Cada licença é emitida para <b>um único pendrive</b> (use em qualquer computador) <b>ou um único computador</b>. Copiar o programa para outro pendrive ou PC não leva a licença junto.</td></tr>
+    <tr><td>Ativação offline</td><td>No programa, em <i>Configurações → Licença</i>, copie o <b>código do dispositivo</b> (<code>CX-P-…</code> pendrive, <code>CX-M-…</code> computador) e envie para a CoreAxis Tech. Você recebe a chave de licença e cola no mesmo lugar. Não precisa de internet.</td></tr>
+    <tr><td>Fim do teste ou da licença</td><td><b>Modo consulta:</b> as ferramentas são bloqueadas, mas seus clientes, chamados e inventários continuam acessíveis e exportáveis. Você nunca perde seus dados.</td></tr>
+  </table>
+  <p style="margin-top:14px"><a class="btn" href="contato.html">Comprar ou renovar licença</a></p>
 
   <h2 style="margin-top:44px">Requisitos</h2>
   <ul>
@@ -216,7 +228,8 @@ const out = {
   <h1>Changelog</h1>
   <p class="sub">Histórico de versões. Versão completa e atualizada em <a href="${REPO}/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</p>
   <div class="versao"><h3>Próxima versão</h3><span class="data">em desenvolvimento</span>
-    <h4>Adicionado</h4><ul><li>Nova identidade visual e ícone baseados na marca CoreAxis Tech.</li><li>Publicação oficial pelo GitHub com SHA-256, verificação no navegador e scripts para auditoria.</li><li>Atualizações automáticas servidas pelas releases do GitHub, com assinatura Ed25519.</li><li>Preparação para assinatura digital Authenticode.</li></ul></div>
+    <h4>Adicionado</h4><ul><li>Nova identidade visual e ícone baseados na marca CoreAxis Tech.</li><li>Publicação oficial pelo GitHub com SHA-256, verificação no navegador e scripts para auditoria.</li><li>Atualizações automáticas servidas pelas releases do GitHub, com assinatura Ed25519.</li><li>Preparação para assinatura digital Authenticode.</li></ul>
+    <h4>Segurança</h4><ul><li>Teste de 15 dias passa a ser um por dispositivo: baixar de novo, trocar de pasta ou atrasar o relógio não reinicia o teste.</li></ul></div>
   <div class="versao"><h3>1.1.1</h3><span class="data">07/10/2026</span>
     <h4>Corrigido</h4><ul><li>Botões "Copiar" voltaram a funcionar em todo o programa.</li></ul>
     <h4>Segurança</h4><ul><li>Permissão de área de transferência restrita à escrita e à interface oficial; teste automatizado contra regressão.</li></ul></div>
@@ -246,6 +259,7 @@ const out = {
     <tr><td>Teste de DNS</td><td>Google, Cloudflare, Quad9, OpenDNS</td><td>Quando você executa</td></tr>
     <tr><td>Verificar atualizações</td><td>github.com</td><td>Ao iniciar (administradores; desativável) ou ao clicar em "Verificar agora". Nenhum dado seu é enviado</td></tr>
   </table>
+  <p><b>Marcador do período de teste:</b> enquanto o programa está <b>sem licença</b>, ele grava um pequeno marcador com apenas duas datas (início do teste e último uso) — no registro do usuário do Windows (<code>HKCU\\Software\\CoreAxis</code>), em <code>%ProgramData%\\CoreAxis</code> e, se rodar de um pendrive, num arquivo oculto na raiz dele. Serve só para impedir que o teste seja reiniciado; não contém dados pessoais e nunca sai do computador. Com licença válida, nada é gravado fora da pasta do programa.</p>
   <p>A ativação de licença é offline. O código do dispositivo é um resumo criptográfico calculado localmente e só é enviado à CoreAxis Tech se você decidir enviá-lo para comprar ou renovar uma licença.</p>
   <p>Como os dados ficam apenas no seu dispositivo, você é o controlador dos dados pessoais de seus clientes (LGPD). Texto completo: <a href="${REPO}/blob/main/PRIVACIDADE.md">PRIVACIDADE.md</a>.</p>
 </div></section>`),

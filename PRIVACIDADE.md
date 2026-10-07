@@ -24,6 +24,8 @@ Nenhum dado cadastrado, inventário, relatório ou informação do computador é
 
 A ativação de licença é **offline**: o código do dispositivo é calculado localmente e só é enviado à CoreAxis Tech se **você** decidir enviá-lo para comprar ou renovar uma licença. Esse código é um resumo criptográfico (hash) e não contém o número de série em texto.
 
+**Marcador do período de teste:** enquanto o programa está **sem licença válida**, ele grava um pequeno marcador autenticado contendo apenas duas datas (início do teste e último uso), em três locais: registro do usuário do Windows (`HKCU\Software\CoreAxis\Toolbox`), `%ProgramData%\CoreAxis\ta.dat` e, quando executado de um pendrive, o arquivo oculto `.coreaxis` na raiz do pendrive. A única finalidade é impedir que o teste de 15 dias seja reiniciado. O marcador não contém dados pessoais e nunca é enviado a lugar nenhum. **Com licença válida, nada é gravado fora da pasta do programa.**
+
 ## 3. Pode ser validado por hash SHA-256
 
 Cada versão publicada tem seu hash **SHA-256** oficial divulgado em [`SHA256.txt`](SHA256.txt), na página da release e no site. Qualquer pessoa pode conferir:

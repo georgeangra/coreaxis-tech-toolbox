@@ -62,7 +62,7 @@ Os dados de clientes, equipamentos e chamados ficam **criptografados (AES-256)**
 
 ## Benefícios
 
-- **Portátil de verdade** — um único `.exe`; não instala nada e não deixa rastros no PC do cliente.
+- **Portátil de verdade** — um único `.exe`; não instala nada e, com licença, não deixa rastros no PC do cliente.
 - **Tudo em um** — diagnóstico, reparo e gestão do atendimento no mesmo lugar.
 - **Funciona offline** — a internet só é usada nos testes de rede que você aciona e para verificar atualizações (desativável).
 - **Dados protegidos** — cofre criptografado AES-256-GCM, login por técnico, bloqueio automático e trilha de auditoria. Útil para a conformidade com a LGPD.
@@ -143,7 +143,9 @@ Manual completo: [docs/MANUAL_UTILIZACAO.md](docs/MANUAL_UTILIZACAO.md).
 
 ## Licenciamento
 
-O CoreAxis Tech Toolbox é um **software comercial**. Cada licença vale para **um dispositivo** — um pendrive (funciona em qualquer PC, rodando a partir dele) ou um computador.
+O CoreAxis Tech Toolbox é um **software comercial**: o download é gratuito, o uso depois do teste exige licença paga. Cada licença vale para **um dispositivo** — um pendrive (funciona em qualquer PC, rodando a partir dele) ou um computador. Copiar o programa para outro pendrive ou PC não leva a licença junto.
+
+O teste de 15 dias é **um por dispositivo**: baixar de novo, apagar a pasta `CoreAxisData`, trocar o programa de pasta ou atrasar o relógio não reinicia o teste.
 
 1. Use os 15 dias de teste.
 2. Em *Configurações → Licença*, copie o **código do dispositivo** e envie para a CoreAxis Tech.
