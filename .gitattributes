@@ -1,0 +1,11 @@
+# Arquivos de texto: LF no repositório
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.zip binary
+*.exe binary
+
+# Scripts de auditoria e hashes: bytes idênticos aos publicados (sem conversão de fim de linha)
+# (precisa ficar depois da regra geral: no .gitattributes a última regra vence)
+auditoria/** -text
+SHA256.txt -text
