@@ -73,7 +73,7 @@ const cartoesModulos = (detalhe) => modulos.map(([ic, t, d, itens]) => `
 
 const out = {
 'index.html': page('index.html', 'CoreAxis Tech Toolbox — a caixa de ferramentas portátil do técnico de TI',
-'Suíte portátil para Windows 10/11: diagnóstico, rede, reparo, segurança, automação, inventário e atendimento. Sem instalação, sem coleta de dados, verificável por SHA-256.', `
+'Suíte portátil para Windows 10/11 e Linux Desktop: diagnóstico, rede, reparo, segurança, automação, inventário e atendimento. Sem instalação, sem coleta de dados, verificável por SHA-256.', `
 <section class="hero"><div class="wrap">
   <div>
     <h1>A caixa de ferramentas <em>portátil</em> do técnico de TI</h1>
@@ -82,7 +82,7 @@ const out = {
       <a class="btn primario grande" href="download.html">⬇ Baixar grátis por 15 dias</a>
       <a class="btn grande" href="recursos.html">Ver recursos</a>
     </div>
-    <p class="meta">Windows 10 e 11 · 64 bits · Sem instalação · Distribuído pelo GitHub</p>
+    <p class="meta">Windows 10 e 11 · Linux Desktop · 64 bits · Sem instalação · Distribuído pelo GitHub</p>
     <div class="selos">
       <span class="selo">🔐 <b>SHA-256</b> publicado em cada versão</span>
       <span class="selo">🛡️ Dados criptografados <b>AES-256</b></span>
@@ -156,8 +156,14 @@ const out = {
 <section><div class="wrap">
   <h1>Download</h1>
   <p class="sub">Distribuição oficial exclusiva pelo GitHub. Desconfie de cópias em outros sites.</p>
+  <h2 style="margin-top:8px">🪟 Windows 10 e 11</h2>
   <div class="cartao" data-download><p>Carregando a versão mais recente…</p>
     <a class="btn primario grande" href="${REPO}/releases/latest">⬇ Ir para a página de download no GitHub</a></div>
+
+  <h2 id="linux" style="margin-top:36px">🐧 Linux Desktop</h2>
+  <div class="cartao" data-download-linux><p>Carregando a versão Linux…</p>
+    <a class="btn primario grande" href="${REPO}/releases?q=linux">⬇ Ir para as versões Linux no GitHub</a></div>
+  <p class="small" style="margin-top:10px;color:var(--muted)">Ubuntu 22.04+, Linux Mint 21+, Debian 12+, Pop!_OS, Zorin, elementary e Fedora 39+ (64 bits, com interface gráfica). Baixe o <b>AppImage</b> e o <b>iniciar-coreaxis.sh</b> para a mesma pasta. Dois cliques no AppImage; em pendrive FAT32/exFAT, no Terminal: <code>sh iniciar-coreaxis.sh</code>. Ações de administrador pedem a senha do Linux. A licença é a mesma da versão Windows.</p>
 
   <h2 id="licenca" style="margin-top:44px">Download gratuito, uso licenciado</h2>
   <div class="aviso"><b>Baixar é grátis, mas o CoreAxis Tech Toolbox não é um programa gratuito.</b> O download inclui <b>15 dias de teste</b> com todas as funções. Depois disso, é preciso comprar uma licença para continuar usando as ferramentas.</div>
@@ -173,7 +179,7 @@ const out = {
 
   <h2 style="margin-top:44px">Requisitos</h2>
   <ul>
-    <li>Windows 10 (1809 ou superior) ou Windows 11, 64 bits</li>
+    <li>Windows 10 (1809 ou superior) ou Windows 11, 64 bits — ou Linux Desktop 64 bits (veja acima)</li>
     <li>Permissão de administrador (o programa solicita ao abrir)</li>
     <li>~110 MB livres · nenhuma dependência adicional</li>
   </ul>
@@ -203,7 +209,7 @@ const out = {
     <input type="file" aria-hidden="true">
     <div style="font-size:42px" aria-hidden="true">🔐</div>
     <p style="margin:6px 0 0"><b>Arraste o arquivo aqui</b> ou clique para selecionar</p>
-    <p style="margin:4px 0 0;color:var(--muted);font-size:14px">.exe ou .zip baixado da release</p>
+    <p style="margin:4px 0 0;color:var(--muted);font-size:14px">.exe, .zip ou .AppImage baixado da release</p>
   </div>
   <div class="barra"><div></div></div>
   <div class="resultado" data-resultado role="status" aria-live="polite"></div>

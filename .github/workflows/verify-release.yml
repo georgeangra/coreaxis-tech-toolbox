@@ -31,7 +31,7 @@ jobs:
           for tag in $(gh release list --repo "$GITHUB_REPOSITORY" --limit 5 --json tagName --jq '.[].tagName'); do
             echo "::group::Release $tag"
             dir="rel-$tag"; mkdir -p "$dir"
-            gh release download "$tag" --repo "$GITHUB_REPOSITORY" --dir "$dir" --pattern "*.exe" --pattern "*.zip" --pattern "SHA256.txt" || true
+            gh release download "$tag" --repo "$GITHUB_REPOSITORY" --dir "$dir" --pattern "*.exe" --pattern "*.zip" --pattern "*.AppImage" --pattern "*.sh" --pattern "SHA256.txt" || true
             if [ ! -f "$dir/SHA256.txt" ]; then
               echo "::error::$tag não publica SHA256.txt"; falhas=$((falhas+1)); echo "::endgroup::"; continue
             fi

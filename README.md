@@ -4,16 +4,19 @@
 
 # CoreAxis Tech Toolbox
 
-**A caixa de ferramentas portátil do técnico de TI para Windows 10 e 11.**
+**A caixa de ferramentas portátil do técnico de TI para Windows 10 e 11 — e agora também Linux Desktop.**
 Diagnóstico, rede, reparo, segurança, automação, inventário e atendimento — em um único executável, sem instalação.
 
-[![Versão](https://img.shields.io/github/v/release/georgeangra/coreaxis-tech-toolbox?label=vers%C3%A3o&color=0BAEC2)](https://github.com/georgeangra/coreaxis-tech-toolbox/releases/latest)
+[![Versão Windows](https://img.shields.io/github/v/release/georgeangra/coreaxis-tech-toolbox?filter=v*&label=Windows&color=0BAEC2)](https://github.com/georgeangra/coreaxis-tech-toolbox/releases/latest)
+[![Versão Linux](https://img.shields.io/github/v/release/georgeangra/coreaxis-tech-toolbox?filter=linux-v*&label=Linux&color=0BAEC2)](https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/linux-v1.0.0)
 [![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0B2545?logo=windows)](#requisitos)
+[![Linux](https://img.shields.io/badge/Linux-Ubuntu%20%7C%20Mint%20%7C%20Debian%20%7C%20Fedora-0B2545?logo=linux)](#versão-linux)
 [![SHA-256](https://img.shields.io/badge/integridade-SHA--256-0BAEC2)](#-como-verificar-a-autenticidade-do-download)
 [![Verificação das releases](https://github.com/georgeangra/coreaxis-tech-toolbox/actions/workflows/verify-release.yml/badge.svg)](https://github.com/georgeangra/coreaxis-tech-toolbox/actions/workflows/verify-release.yml)
 [![Privacidade](https://img.shields.io/badge/privacidade-sem%20coleta%20de%20dados-1A2433)](PRIVACIDADE.md)
 
-[**⬇ Baixar**](https://github.com/georgeangra/coreaxis-tech-toolbox/releases/latest) ·
+[**⬇ Baixar para Windows**](https://github.com/georgeangra/coreaxis-tech-toolbox/releases/latest) ·
+[**⬇ Baixar para Linux**](https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/linux-v1.0.0) ·
 [Site oficial](https://georgeangra.github.io/coreaxis-tech-toolbox/) ·
 [Verificar download](https://georgeangra.github.io/coreaxis-tech-toolbox/verificar.html) ·
 [Changelog](CHANGELOG.md) ·
@@ -30,7 +33,7 @@ Diagnóstico, rede, reparo, segurança, automação, inventário e atendimento �
 - [Benefícios](#benefícios)
 - [Capturas de tela](#capturas-de-tela)
 - [Requisitos](#requisitos)
-- [Instalação](#instalação)
+- [Instalação](#instalação) · [Versão Linux](#versão-linux)
 - [Como verificar a autenticidade do download](#-como-verificar-a-autenticidade-do-download)
 - [Uso](#uso)
 - [Licenciamento](#licenciamento)
@@ -98,6 +101,16 @@ O programa **não é instalado**. Basta:
 > **"O Windows protegeu o computador"?** Enquanto o executável não possui assinatura digital Authenticode, o SmartScreen pode exibir esse aviso. Confirme o SHA-256 e clique em *Mais informações → Executar assim mesmo*. A assinatura digital está planejada (ver [SECURITY.md](SECURITY.md#assinatura-digital)).
 
 Os dados ficam na pasta `CoreAxisData`, criada ao lado do `.exe`. Para levar tudo para outro pendrive, copie o `.exe` **junto** com essa pasta.
+
+### Versão Linux
+
+Para **Linux Desktop 64 bits** (testado no Ubuntu 24.04; compatível com Ubuntu 22.04+, Mint 21+, Debian 12+, Pop!_OS, Zorin, elementary e Fedora 39+):
+
+1. Baixe `CoreAxisTechToolbox-<versão>-x86_64.AppImage` **e** `iniciar-coreaxis.sh` em **[Releases → linux-v1.0.0](https://github.com/georgeangra/coreaxis-tech-toolbox/releases/tag/linux-v1.0.0)** e confira com `sha256sum -c SHA256.txt --ignore-missing`.
+2. Coloque os dois na mesma pasta (ex.: `CoreAxis` no pendrive) e dê dois cliques no AppImage (se necessário: *Propriedades → Permitir executar como programa*).
+3. Pendrive FAT32/exFAT ou sistema sem FUSE: no Terminal, `sh iniciar-coreaxis.sh`.
+
+Mesmas funções e mesma licença. No lugar de SFC/DISM/Windows Update/Defender, a versão Linux usa o gerenciador de pacotes (apt/dnf/zypper/pacman, Snap e Flatpak), ClamAV, AppArmor e UFW/firewalld. O programa roda como usuário comum e pede a senha do Linux nas ações de administrador. Scripts executados: [`auditoria/linux`](auditoria/linux).
 
 ## 🔐 Como verificar a autenticidade do download
 

@@ -62,6 +62,29 @@ const cxEsc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': 
   }
 })();
 
+// Página de download: versão Linux (AppImage), a partir de site/hashes.json (campo "linux")
+(async () => {
+  const alvo = document.querySelector('[data-download-linux]');
+  if (!alvo) return;
+  try {
+    const d = await cxHashes();
+    const v = d.linux;
+    const rel = d.releases.find((r) => r.version === `linux-${v}`);
+    if (!v || !rel) throw new Error('sem versão Linux');
+    const base = `https://github.com/${CX.repo}/releases/download/linux-v${encodeURIComponent(v)}/`;
+    const app = rel.files.find((x) => /\.AppImage$/.test(x.name));
+    const ini = rel.files.find((x) => /\.sh$/.test(x.name));
+    alvo.innerHTML = `
+      <p><b>Versão ${cxEsc(v)} para Linux</b> · publicada em ${cxEsc(rel.date.split('-').reverse().join('/'))}</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        ${app ? `<a class="btn primario grande" href="${base}${encodeURIComponent(app.name)}">⬇ Baixar ${cxEsc(app.name)} (${cxTam(app.size)})</a>` : ''}
+        ${ini ? `<a class="btn grande" href="${base}${encodeURIComponent(ini.name)}">⬇ ${cxEsc(ini.name)}</a>` : ''}
+      </div>
+      ${app ? `<p style="margin-top:16px">SHA-256 oficial do AppImage:</p><div class="hash">${cxEsc(app.sha256.toUpperCase())}</div>` : ''}
+      <p style="margin-top:10px"><a href="https://github.com/${CX.repo}/releases/tag/linux-v${cxEsc(v)}">Ver todos os arquivos, notas e SHA256.txt da versão Linux →</a></p>`;
+  } catch { /* mantém o link para as releases */ }
+})();
+
 // Página de contato: exibe contatos comerciais configurados
 (() => {
   const el = document.querySelector('[data-contato-comercial]');

@@ -1,48 +1,70 @@
 {
-    "latest":  "1.2.0",
-    "repository":  "https://github.com/georgeangra/coreaxis-tech-toolbox",
-    "releases":  [
-                     {
-                         "version":  "1.2.0",
-                         "date":  "2026-10-07",
-                         "files":  [
-                                       {
-                                           "name":  "auditoria-scripts-1.2.0.zip",
-                                           "sha256":  "3f42ba34cba66ef5a980553ec0508db881064dbe1f099b6e67c63f7d04bdbed3",
-                                           "size":  35316
-                                       },
-                                       {
-                                           "name":  "CoreAxisTechToolbox-1.2.0-portable.exe",
-                                           "sha256":  "dcef9a0c00243aa65d8e7e319962ab296b6f9fa219e69f3f723e075267c9ede2",
-                                           "size":  105257368
-                                       },
-                                       {
-                                           "name":  "CoreAxisTechToolbox-1.2.0-portable.zip",
-                                           "sha256":  "0f172989ed7b445cc08d9ce665c90987e58ef0b808e5919b311aaac1b963a156",
-                                           "size":  105264214
-                                       }
-                                   ]
-                     },
-                     {
-                         "version":  "1.1.1",
-                         "date":  "2026-10-07",
-                         "files":  [
-                                       {
-                                           "name":  "auditoria-scripts-1.1.1.zip",
-                                           "sha256":  "a8f59ed217df79c3e7375f0f06aec62c7ac3535df946ed37887e9441c8b46360",
-                                           "size":  35317
-                                       },
-                                       {
-                                           "name":  "CoreAxisTechToolbox-1.1.1-portable.exe",
-                                           "sha256":  "c9e440f7ec0a8166236663701a2822ab35e42014c6bf2fbc5a2c30085c7a103f",
-                                           "size":  105163437
-                                       },
-                                       {
-                                           "name":  "CoreAxisTechToolbox-1.1.1-portable.zip",
-                                           "sha256":  "4b4fa8d75eef42fb5bf0bf8b96a65012ad11fc6e69d97328201416d119c361a0",
-                                           "size":  105170553
-                                       }
-                                   ]
-                     }
-                 ]
+  "latest": "1.2.0",
+  "repository": "https://github.com/georgeangra/coreaxis-tech-toolbox",
+  "releases": [
+    {
+      "version": "1.2.0",
+      "date": "2026-10-07",
+      "files": [
+        {
+          "name": "auditoria-scripts-1.2.0.zip",
+          "sha256": "3f42ba34cba66ef5a980553ec0508db881064dbe1f099b6e67c63f7d04bdbed3",
+          "size": 35316
+        },
+        {
+          "name": "CoreAxisTechToolbox-1.2.0-portable.exe",
+          "sha256": "dcef9a0c00243aa65d8e7e319962ab296b6f9fa219e69f3f723e075267c9ede2",
+          "size": 105257368
+        },
+        {
+          "name": "CoreAxisTechToolbox-1.2.0-portable.zip",
+          "sha256": "0f172989ed7b445cc08d9ce665c90987e58ef0b808e5919b311aaac1b963a156",
+          "size": 105264214
+        }
+      ]
+    },
+    {
+      "version": "linux-1.0.0",
+      "date": "2026-10-08",
+      "files": [
+        {
+          "name": "auditoria-scripts-linux-1.0.0.zip",
+          "sha256": "f523d3c53a4e9f456ccaca85eb892465391b8ebdad6e35e8fa025670809d9fc3",
+          "size": 46844
+        },
+        {
+          "name": "CoreAxisTechToolbox-1.0.0-x86_64.AppImage",
+          "sha256": "da058e50a399844b232c462ec1af662fbb039d38f598d6592e65a8224b9ca57b",
+          "size": 109494721
+        },
+        {
+          "name": "iniciar-coreaxis.sh",
+          "sha256": "2381ba2f068a8bbee37c37ff2fa2c2db7799aa84076a71ca394815f09064df1c",
+          "size": 1782
+        }
+      ]
+    },
+    {
+      "version": "1.1.1",
+      "date": "2026-10-07",
+      "files": [
+        {
+          "name": "auditoria-scripts-1.1.1.zip",
+          "sha256": "a8f59ed217df79c3e7375f0f06aec62c7ac3535df946ed37887e9441c8b46360",
+          "size": 35317
+        },
+        {
+          "name": "CoreAxisTechToolbox-1.1.1-portable.exe",
+          "sha256": "c9e440f7ec0a8166236663701a2822ab35e42014c6bf2fbc5a2c30085c7a103f",
+          "size": 105163437
+        },
+        {
+          "name": "CoreAxisTechToolbox-1.1.1-portable.zip",
+          "sha256": "4b4fa8d75eef42fb5bf0bf8b96a65012ad11fc6e69d97328201416d119c361a0",
+          "size": 105170553
+        }
+      ]
+    }
+  ],
+  "linux": "1.0.0"
 }
